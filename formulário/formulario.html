@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Saafe Moreira Henrique Silva">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr><br><br>
+    <form action="https://www.google.com.br">
+    <b>Nome completo:</b> <input type="text" name="nome" id="txtNome"  required><br><br>
+    <b>Sobrenome:</b> <input type="text" name="Sobrenome" id="txtSobrenome" required><br><br>
+    <b>E-mail:</b> <input type="e-mail" required multiple><br><br>
+    <b>Data de Nacimento:</b> <input type="date" name="nascimento" min="1950-01-01" max="2030-12-31"><br><br>
+    <b>CPF:</b> <input type="number" required><br><br>
+    <b>Telefone:</b> <input type="tel" name="tel" placeholder="(DDD)#####-####"><br><br>
+    Endereço:<input type="endereco" name="endereco"><br><br>
+    Estado: <select name="estado">
+        <option value="DF">Brasilia</option>
+        <option value="RJ">Rio de janeiro</option>
+        <option value="sp">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+    </select><br><br>
+    <b>senha:</b> <input type="password" name="senha"><br><br>
+    <b>confirmação:</b> <input type="password" name="confirmacao"><br><br>
+    Deixa sua mensagem aqui: <br><textarea cols="60" rows="8"></textarea><br><br>
+    </form>
+    <form action="form.php" method="POST">
+        <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+</html>
